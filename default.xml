@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+   <remote name="git.openembedded.org" alias="origin" fetch="https://git.openembedded.org/"/>
+   <remote name="git.yoctoproject.org" alias="origin" fetch="https://git.yoctoproject.org/git/"/>
+   <remote name="github.com" alias="origin" fetch="https://github.com"/>
+   <remote name="ssh-github" alias="origin" fetch="ssh://git@github.com"/>
+
+   <project name="poky"
+            remote="git.yoctoproject.org"
+            path="intel-embedded-system-enabling"
+            revision="refs/heads/scarthgap"/>
+   <project name="meta-openembedded"
+            remote="git.openembedded.org"
+            path="intel-embedded-system-enabling/meta-openembedded"
+            revision="refs/heads/scarthgap"/>
+   <project name="meta-intel"
+            remote="git.yoctoproject.org"
+            path="intel-embedded-system-enabling/meta-intel"
+            revision="refs/heads/master"/>
+   <project name="meta-security"
+            remote="git.yoctoproject.org"
+            path="intel-embedded-system-enabling/meta-security"
+            revision="refs/heads/scarthgap"/>
+   <project name="meta-virtualization"
+            remote="git.yoctoproject.org"
+            path="intel-embedded-system-enabling/meta-virtualization"
+            revision="refs/heads/scarthgap"/>
+   <project name="intel-innersource/networking.wireless.transport.rdk.board-support.meta-intel-axxia"
+            remote="ssh-github"
+            path="intel-embedded-system-enabling/meta-intel-axxia"
+            revision="refs/heads/scarthgap"
+            groups="notdefault,internal"/>
+   <project name="PreetiSachan/os.linux.yocto.build.axxia.build"
+            remote="ssh-github"
+            path="build"
+            revision="refs/heads/main"/>
+</manifest>
