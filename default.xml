@@ -34,4 +34,9 @@
             remote="ssh-github"
             path="build"
             revision="refs/heads/main"/>
+   <project name="PreetiSachan/os.linux.yocto.build.build-automation"
+            remote="ssh-github"
+            path="build/automation-support"
+            revision="refs/heads/master"
+            groups="notdefault,internal"/>
 </manifest>
